@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    font-weight: 100;
+    font-family: sans-serif;
+    outline: none;
+}
+
+body {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background: linear-gradient(339deg, rgba(95,236,217,1) 0%, rgba(117,236,186,1) 35%, rgba(105,183,218,1) 100%);
+    overflow-y: hidden;
+    max-height: 100vh;
+}
+
+main {
+    padding: 2em;
+    height: 100vh;
+}
+
+main h1 {
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+
+main .add-duretaneada {
+    border-radius: 100px;
+    padding: .7em 1em;
+    background: #fff;
+    font-size: 1.1em;
+    color: #3eb899;
+    display: block;
+    margin: 1em auto;
+    box-shadow: 1px 1px 5px 1px #aaaaaa80;
+}
+
+main section {
+    padding: 1em 0;
+    height: 80vh;
+    overflow-y: auto;
+}
+
+main section .note-element {
+    padding: 1em;
+    box-shadow: 1px 1px 5px 1px #aaaaaa80;
+    border-radius: 5px;
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #fff;
+}
+
+main section .note-element span:nth-child(1) {
+    color: #3eb899;
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .note-element span:nth-child(2) {
+    border-block: 1px solid #dddddd;
+    padding-block: .8em;
+    color: #303030;
+}
+
+main section .note-element span:nth-child(3) {
+    text-align: right;
+    font-size: .8em;
+    color: #707070aa;
+}
+
+.panel-form {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000090;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#close-form {
+    font-size: 1.2em;
+    border-radius: 100px;
+    padding: .7em 1em;
+    position: absolute;
+    bottom: 1em;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.form div textarea {
+    padding: .5em 1em;
+    font-size: 1.2em;
+}
+
+.form div select {
+    padding: .5em 1em;
+    width: 100%;
+    font-size: 1.2em;
+}
+
+.form div button {
+    border-radius: 100px;
+    padding: .7em 1em;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #fff;
+    display: flex;
+    margin: 0 auto;
+    font-size: 1.2em;
+}
+
+.spinner {
+    display: inline-flex;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    border: 2px solid #3eb899;
+    border-left: 2px solid #00000090;
+    animation: move 1s linear;
+    margin-left: .5em;
+}
+
+@keyframes move {
+    from {
+        transform: rotate(0);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
